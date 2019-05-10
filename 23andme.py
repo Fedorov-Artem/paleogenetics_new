@@ -1,3 +1,5 @@
+#This code checks 23andme result files for known Y-SNPS
+
 import numpy as np
 import pandas as pd
 

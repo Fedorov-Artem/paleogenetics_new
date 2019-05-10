@@ -1,3 +1,5 @@
+#This is the scrip to check bam file for known Y-SNPs
+
 import bamnostic as bs
 import numpy as np
 import pandas as pd
