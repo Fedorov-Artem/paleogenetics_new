@@ -69,17 +69,3 @@ df_export.loc[df_export['result_text'] == df_export['ancestral'], ['result_final
 df_export.loc[df_export['result_text'] == df_export['derived'], ['result_final']] = 'derived'
 
 df_export.to_csv(output_file_name, encoding='utf-8', index=False)
-
-'''
-#import importlib
-#pysam = importlib.import_module("pysam-win")
-import pysam
-samfile = pysam.Samfile(file_path, "rb")
-for pileupcolumn in samfile.pileup( '1', 14693, 14694):
-    for pileupread in pileupcolumn.pileups:
-        if pileupcolumn.pos == 14693:
-            base = pileupread.alignment.query_sequence[pileupread.query_position]
-            print(base)
-
-samfile.close()
-'''
