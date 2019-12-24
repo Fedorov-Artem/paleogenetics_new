@@ -2,8 +2,8 @@
 #Note: you need to delete from YSOGG file info about all mutations that are not SNP before running this script
 import pandas as pd
 
-path_import = 'project_data/R_happl.csv'
-path_export = 'project_data/R_fixed.csv'
+path_import = 'project_data/I2_new.csv'
+path_export = 'project_data/I2_new_fixed.csv'
 
 df = pd.read_csv(path_import)
 
