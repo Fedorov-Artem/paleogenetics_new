@@ -1,5 +1,4 @@
 #This code creates a file with SNP list in the required format from a file, copied fom YSOGG
-#Note: you need to delete from YSOGG file info about all mutations that are not SNP before running this script
 import pandas as pd
 
 path_import = 'project_data/J_new.csv'
