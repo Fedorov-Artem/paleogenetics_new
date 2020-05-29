@@ -6,10 +6,10 @@ import pandas as pd
 import time
 
 
-bam_file_path = r'D:\Workspace\paleogenetics\project_data\Wartberg\KH150633.bam'
+bam_file_path = r'D:\Workspace\paleogenetics\project_data\med_isles\I14675.hg19.bam'
 #bam_file_path = 'project_data/Cheddar_man/SB524A4_lib.merged.markdup.bam'
 target_snps_path = 'project_data/trunk_and_i_new.csv'
-output_file_name = 'project_data/Wartberg_KH150633.csv'
+output_file_name = 'project_data/med_isles_I14675.csv'
 
 bam = bs.AlignmentFile(bam_file_path, 'rb')
 df = pd.read_csv(target_snps_path)
